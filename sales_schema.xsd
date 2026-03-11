@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SalesDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Header">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VBELN" type="xs:string"/>
+              <xs:element name="ERDAT" type="xs:string"/>
+              <xs:element name="ERZET" type="xs:string"/>
+              <xs:element name="ERNAM" type="xs:string"/>
+              <xs:element name="VBTYP" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+		
+        <xs:element name="Items">
+		  <xs:complexType>
+			<xs:sequence>
+			  <xs:element name="Item" maxOccurs="unbounded">
+				<xs:complexType>
+				  <xs:sequence>
+					<xs:element name="POSNR" type="xs:string"/>
+					<xs:element name="NETWR" type="xs:string"/>
+					<xs:element name="WAERK" type="xs:string"/>
+				  </xs:sequence>
+				</xs:complexType>
+			  </xs:element>
+			</xs:sequence>
+		  </xs:complexType>
+		</xs:element>
+		
+		
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
