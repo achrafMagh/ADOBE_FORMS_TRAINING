@@ -1,3 +1,4 @@
+
 SELECT SINGLE vbeln, erdat, erzet, ernam, vbtyp
   FROM vbak
   INTO CORRESPONDING FIELDS OF @gs_header
@@ -13,8 +14,11 @@ ENDIF.
 
 DATA lv_item TYPE ty_item.
 
-DO 100 TIMES.
-  lv_item-posnr = '10'.
-  lv_item-netwr = '100'.
-  lv_item-waerk = 'EUR'.
-ENDDO.
+*DO 100 TIMES.
+*  lv_item-posnr = '10'.
+*  lv_item-netwr = '100'.
+*  lv_item-waerk = 'EUR'.
+*  APPEND lv_item TO GT_ITEMS.
+*ENDDO.
+*
+*BREAK-POINT.
