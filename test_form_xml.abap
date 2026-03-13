@@ -1,4 +1,4 @@
-REPORT test_form_xml.
+
 
 DATA: lv_fm_name   TYPE funcname,
       ls_output    TYPE sfpoutputparams,
