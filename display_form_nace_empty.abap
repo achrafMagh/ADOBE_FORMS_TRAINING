@@ -13,7 +13,7 @@ FORM entry USING us_retco TYPE sy-subrc
 
   CALL FUNCTION 'FP_FUNCTION_MODULE_NAME'
     EXPORTING
-      i_name     = 'ZFF_SD_INVOICE_FORM_V10'
+      i_name     = 'form_name'
     IMPORTING
       e_funcname = lv_fm_name.
 
