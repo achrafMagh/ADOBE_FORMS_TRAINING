@@ -4,6 +4,7 @@ DATA: lv_fm_name      TYPE funcname,
       ls_outputparams TYPE sfpoutputparams,
       ls_docparams    TYPE sfpdocparams,
       ls_formoutput   TYPE fpformoutput.
+      //déclaration des variables
 
 FORM entry USING us_retco TYPE sy-subrc
                  us_screen TYPE c.
