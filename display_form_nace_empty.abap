@@ -4,7 +4,7 @@ DATA: lv_fm_name      TYPE funcname,
       ls_outputparams TYPE sfpoutputparams,
       ls_docparams    TYPE sfpdocparams,
       ls_formoutput   TYPE fpformoutput.
-      //déclaration des variables
+      "déclaration des variables
 
 FORM entry USING us_retco TYPE sy-subrc
                  us_screen TYPE c.
@@ -13,7 +13,7 @@ FORM entry USING us_retco TYPE sy-subrc
 
   CALL FUNCTION 'FP_FUNCTION_MODULE_NAME'
     EXPORTING
-      i_name     = 'form_name'
+      i_name     = 'form_name' "changer avec votre propre formulaire
     IMPORTING
       e_funcname = lv_fm_name.
 
@@ -33,7 +33,7 @@ FORM entry USING us_retco TYPE sy-subrc
   CALL FUNCTION lv_fm_name
     EXPORTING
       /1bcdwb/docparams  = ls_docparams
-      //imports 
+      "imports 
     IMPORTING
       /1bcdwb/formoutput = ls_formoutput
     EXCEPTIONS
