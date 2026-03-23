@@ -28,7 +28,6 @@ FORM entry USING us_retco TYPE sy-subrc
     us_retco = 1.
     RETURN.
   ENDIF.
-  BREAK-POINT.
 
   CALL FUNCTION lv_fm_name
     EXPORTING
